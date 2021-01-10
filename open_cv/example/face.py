@@ -3,7 +3,7 @@ import numpy as np
 
 face_cascade = cv2.CascadeClassifier('D:\work\project\open_cv\example\Lib\site-packages\cv2\data\haarcascade_frontalface_alt2.xml')
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('rtsp://duc:xemgaixinh@192.168.1.108:554/cam/realmonitor?channel=1&subtype=0)
 
 while(True):
     ret, frame = cap.read()
